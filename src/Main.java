@@ -7,7 +7,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         Curso curso1 = new Curso();
-        curso1.setTitulo("Curso java");
+        curso1.setTitulo("Lógica de Programação Essencial");
         curso1.setDescricao("descrição curso java");
         curso1.setCargaHoraria(8);
 
@@ -34,37 +34,6 @@ public class Main {
         devLuiz.setNome("Luiz");
         devLuiz.inscreverBootcamp(bootcamp);
 
-        Dev devMiguel = new Dev();
-        devMiguel.setNome("Miguel");
-        devMiguel.inscreverBootcamp(bootcamp);
-
-
-        System.out.println("Conteudos inscritos Luiz" +devLuiz.getConteudosInscritos());
-        System.out.println("Conteudos concluidos Luiz" +devLuiz.getConteudosConcluidos());
-
-        System.out.println("Conteudos inscritos Miguel" + devMiguel.getConteudosInscritos());
-        System.out.println("Conteudos concluidos Miguel" + devMiguel.getConteudosConcluidos());
-
-        System.out.println("=========Progresso==========");
-        devLuiz.progredir();
-        devMiguel.progredir();
-
-        System.out.println("Conteudos inscritos Luiz" +devLuiz.getConteudosInscritos());
-        System.out.println("Conteudos concluidos Luiz" +devLuiz.getConteudosConcluidos());
-        System.out.println("Xp "+devLuiz.calcularTotalXp());
-
-        System.out.println("Conteudos inscritos Miguel" + devMiguel.getConteudosInscritos());
-        System.out.println("Conteudos concluidos Miguel" + devMiguel.getConteudosConcluidos());
-
-        System.out.println("Xp: " + devMiguel.calcularTotalXp());
-
-        devLuiz.progredir();
-        devLuiz.progredir();
-        System.out.println("=========Progresso==========");
-
-        System.out.println("Conteudos inscritos Luiz" +devLuiz.getConteudosInscritos());
-        System.out.println("Conteudos concluidos Luiz" +devLuiz.getConteudosConcluidos());
-        System.out.println("Xp "+devLuiz.calcularTotalXp());
 
 
 
