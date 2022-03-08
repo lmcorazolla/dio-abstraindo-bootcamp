@@ -7,6 +7,18 @@ import java.util.Objects;
 import java.util.Set;
 
 public class Bootcamp {
+    @Override
+    public String toString() {
+        return "Bootcamp: " +
+                "nome: '" + nome + '\n' +
+                ", descrição: '" + descricao + '\n' +
+                ", data de início: " + dataInicial +
+                ", data de fim: " + dataFinal +
+                ", \ndevs Inscritos: " + getDevsInscritos()+
+                ", conteúdo: " + conteudos +
+                '\n';
+    }
+
     private String nome;
     private String descricao;
     private LocalDate dataInicial = LocalDate.now();
